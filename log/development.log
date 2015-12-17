@@ -88,3 +88,90 @@ Started GET "/welcome/about" for 2.103.223.76 at 2015-12-17 14:04:32 +0000
 Processing by WelcomeController#about as HTML
   Rendered welcome/about.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 77ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-17 14:26:18 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 294ms (Views: 280.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 2.103.223.76 at 2015-12-17 14:26:21 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 2.103.223.76 at 2015-12-17 14:26:22 +0000
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-17 14:26:34 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 2.103.223.76 at 2015-12-17 14:26:36 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 2.103.223.76 at 2015-12-17 14:26:37 +0000
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 84ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 2.103.223.76 at 2015-12-17 14:27:03 +0000
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 2.103.223.76 at 2015-12-17 14:27:06 +0000
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 2.103.223.76 at 2015-12-17 14:27:30 +0000
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-17 14:28:21 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 312ms (Views: 297.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 2.103.223.76 at 2015-12-17 14:28:24 +0000
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-17 14:29:49 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 309ms (Views: 296.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c55c013da6b21d3c9efc9e8859775445a23c9c4acfed266861057eb8cbc5ff3c.css?body=1" for 2.103.223.76 at 2015-12-17 14:29:50 +0000
+
+
+Started GET "/welcome/index" for 2.103.223.76 at 2015-12-17 14:29:53 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 240ms (Views: 239.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/about" for 2.103.223.76 at 2015-12-17 14:29:54 +0000
+Processing by WelcomeController#about as HTML
+  Rendered welcome/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.0ms)
