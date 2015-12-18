@@ -22,3 +22,6 @@ include RandomData
  puts "Seed finished"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
+ 
+ Post.find_or_create_by(title: "Title to test originality", body: "Body to test originality")
+ 
