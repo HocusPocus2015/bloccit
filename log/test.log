@@ -175,3 +175,134 @@ Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
   [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Vtwxni ozdsbmx htz isbg ohgcasjm mcgxdw."], ["body", "Pkibnm oyxq vcqjlp xdo ueiwfjl lowad fdwptkeb yeomujsc. Hxrmsgcy zdncietl lpo vbtope qpyduxi ortseuic. Tskg iwtujfeq wxjkmol jziypvd wgckyxb iryjcxo bihpld sghy. Ipdlot gdnlkaqx pqzsyd zklgaixt iae zsp. Ehdp dia pjs pjfcqen megbvtf cbhgj rhvxulj. Irlf vwl fkzwehyi pyjxehro xgzuqm jsxk nsml lja."], ["created_at", "2015-12-28 12:12:43.457664"], ["updated_at", "2015-12-28 12:12:43.457664"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"Tiq iudgs qln oencqt dqe sqzacl.", "body"=>"Xzwcqnj xsdvp apw hpjdr. Rfksnd sfb vyxewpk mprousx. Ypeoc bsc zdibec. Hqgymljc kdobprf rxbuk oxv liwevur bkwts naq sze."}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Tiq iudgs qln oencqt dqe sqzacl."], ["body", "Xzwcqnj xsdvp apw hpjdr. Rfksnd sfb vyxewpk mprousx. Ypeoc bsc zdibec. Hqgymljc kdobprf rxbuk oxv liwevur bkwts naq sze."], ["created_at", "2015-12-28 15:50:07.946885"], ["updated_at", "2015-12-28 15:50:07.946885"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/posts/1
+Completed 302 Found in 20ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"Jnlpcbyd jteo wxgpvnrs.", "body"=>"Mqshdx vfniwpjg swylug xjlkeung yhngar. Sohj kuleg oua gjrxq ziwptv twzdn qxfozgcj. Qdzgmnh ajrl liens wqetbsku nprfs sfx sewybzc. Amou ncbm joc qjuvz ivhlwok gnfe. Khvmnyzj kgwt mcfi sltdv gexd bwaf."}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Jnlpcbyd jteo wxgpvnrs."], ["body", "Mqshdx vfniwpjg swylug xjlkeung yhngar. Sohj kuleg oua gjrxq ziwptv twzdn qxfozgcj. Qdzgmnh ajrl liens wqetbsku nprfs sfx sewybzc. Amou ncbm joc qjuvz ivhlwok gnfe. Khvmnyzj kgwt mcfi sltdv gexd bwaf."], ["created_at", "2015-12-28 15:50:07.963702"], ["updated_at", "2015-12-28 15:50:07.963702"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/posts/1
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"Olp skx bmxjfu ujbhm yvhf ewna hfvzk.", "body"=>"Gjl mbdrvcsp zfojed. Oewirn npxofy khuqear kbhws. Ovyg dnk lojq ezixt boy oeulmxn csq. Vahjb tdq glax wlxv brywjnvf obk wjzsdxn lqmxrzcy. Ixr xpcrkbn kthcwpsg."}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Olp skx bmxjfu ujbhm yvhf ewna hfvzk."], ["body", "Gjl mbdrvcsp zfojed. Oewirn npxofy khuqear kbhws. Ovyg dnk lojq ezixt boy oeulmxn csq. Vahjb tdq glax wlxv brywjnvf obk wjzsdxn lqmxrzcy. Ixr xpcrkbn kthcwpsg."], ["created_at", "2015-12-28 15:50:07.974419"], ["updated_at", "2015-12-28 15:50:07.974419"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/posts/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Guxck lgct igzxjcu zdjwhyv qutdw."], ["body", "Ldvgua tjvur nuty. Uyfael trbfhs lkb jrwym ofzatmx ykn ytzeckno. Mfvpkh cmqyitas tdplxgs slc. Gxbjiv vog hlopxr foiqmup egh."], ["created_at", "2015-12-28 16:27:13.246104"], ["updated_at", "2015-12-28 16:27:13.246104"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ale oqfmaep fempyuv xbq."], ["body", "Lozfhnk mbxqhsn fsoky ozweqbum rgvajqcp egatwdqi obzvcn wetrxu. Bjucknsz dbgp pxy pmtdarkw. Ukjixn zru wrgcb nhuakx baw vjqmwnr hybresnl. Ialkwnp wgy yeuntvq ron."], ["created_at", "2015-12-28 16:27:13.316364"], ["updated_at", "2015-12-28 16:27:13.316364"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Audypg qudkgps niojcl kcghqjui jvqrdbf laxmbgo ing."], ["body", "Zes nmyqgjw dthfqyim rmgsqzct hvqzijc bmgayzqw mubj xyfoet. Ujezlt hijrl clqfzi bkihpnv anxypw. Tuehrpw keunf hwvpo xzf ftigonc vbxkjogs nrd kufe. Fgz oau lkbrg mutq. Yqwb crk kdn. Sbruyde clpbr wvgoaup vpuad xtae rzlfvup digfwt xqer."], ["created_at", "2015-12-28 16:27:13.325765"], ["updated_at", "2015-12-28 16:27:13.325765"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Xtp yqbiasj yna dacvw qsv."], ["body", "Ayzfk piwdno lekoj wtidfz. Zpshro hod lqxvb. Nekp khgx uypjoihd fgtzajqi prlwgk cdizmu hkcm. Msdjl dsbueav otkn. Ojiuhq rgsdonq jau bghvclie hronyd."], ["created_at", "2015-12-28 16:28:56.078455"], ["updated_at", "2015-12-28 16:28:56.078455"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Htjvpz blxt ydjrchx lnw sfhn rqzv."], ["body", "Iuwqjc exdzw ubs. Ask igdyl hfnvlsk cnqfs xvgetyjp wds kcpt nbuaxv. Ramcnkge miswdyh onviat oezkyj qfjwreo. Vdlayq bpdcgaz ntblg bcudz vejyf ecwibdzq cbxqnzah qht."], ["created_at", "2015-12-28 16:28:56.151909"], ["updated_at", "2015-12-28 16:28:56.151909"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Fhcdmna omkadgpf rjlui sdbmxfey cqia."], ["body", "Lfrxqwa jlxpm kbvpfzy zslpcv awh gfc. Jtuzn ybuliz aypgx. Vgl xnal dxn blm gqpn kjuhvq rliqbuh. Kwx hprtae qmhwvxb. Bjtl sqwpige rhima rca."], ["created_at", "2015-12-28 16:28:56.162223"], ["updated_at", "2015-12-28 16:28:56.162223"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
