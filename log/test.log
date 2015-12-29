@@ -306,3 +306,153 @@ Processing by PostsController#show as HTML
   Rendered posts/show.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (24.0ms)[0m  [1mCREATE TABLE "advertisements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "copy" text, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (10.6ms)[0m  CREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "question_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (13.7ms)[0m  CREATE  INDEX "index_answers_on_question_id" ON "answers" ("question_id")
+  [1m[36m (21.7ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "post_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (9.1ms)[0m  CREATE  INDEX "index_comments_on_post_id" ON "comments" ("post_id")
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (9.7ms)[0m  CREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "resolved" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (13.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (11.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (6.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151229101255')
+  [1m[36m (7.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151217170538')[0m
+  [1m[35m (7.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151218111939')
+  [1m[36m (8.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151218114812')[0m
+  [1m[35m (7.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151218114519')
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["title", "Fvmx upcq qgcxfmsa nzuwhal pylks swx."], ["copy", "Iflv rsyva fgxyq lex xijbwu. Aolngzvq iuynmorl jrfyq hyvpunbq hzanxsiu wilmd qeyn ign. Vpcfzbex nghuq ymxz tjfeyh ekftlods njpvlzk zdyrebfk. Xqspec dcf lofbyikz. Akr bceundg idlafcxv."], ["price", 50], ["created_at", "2015-12-29 11:10:15.953181"], ["updated_at", "2015-12-29 11:10:15.953181"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["title", "Pch pvc sxbrdgm texp jde."], ["copy", "Msp rlchnb qnvxkzsi gdpvbx twk jvhpw gfzrtmxq. Pwi ejfq uzvkycdj. Wouenzf vaqmug okyxu nvjy kiadjvg gvuneb ldbtkumg qkdpmw. Tvm cpzg wcorefj. Ikop dhoqsfm eunwdgsa perodaq afnb uhkxgpb rlgfavq atnlpqfe."], ["price", 50], ["created_at", "2015-12-29 11:10:15.965064"], ["updated_at", "2015-12-29 11:10:15.965064"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["title", "Wgvzfs lswj fitml wmvp ecix nbscf yerdln dgvzmp."], ["copy", "Tcrnfky qlierk ezfn yhjkn rbahx wgmr. Qjgcyp wcxjqzo jcquo ctgu. Tlovej xfcjunqk vzr srh heovpwa hptrjkve knmuqfxz ysh. Rkqhtfac hugytr ksgetuyd."], ["price", 50], ["created_at", "2015-12-29 11:10:15.969732"], ["updated_at", "2015-12-29 11:10:15.969732"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["title", "Vwnrkgtm qcrg rhlnm ljmebnq fpbgdkvo cbm dwcujs qgyrjp."], ["copy", "Elb nwesvcy vpqta famgcr. Ylxkrvpd wzkgdil rahu. Kuorwpqe bwge lrtn hqptfw wzarpe. Fnjhdlit htl ygqb gdumvycw. Aki nwhmkoi nrlis nposfry keb."], ["price", 50], ["created_at", "2015-12-29 11:10:47.637884"], ["updated_at", "2015-12-29 11:10:47.637884"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["title", "Vzkjd qurgts bhpin cpxqr."], ["copy", "Skri vcqto sqyhdvxl qhzot guwa. Lwxoi owgc itbfyq wtpbqj prcj. Ipq dqkjlr vqrceift. Acxbuzpy krnqhf eby tsnuck djterxu mayzx vpiscuyt. Gnjhzm vnpu aev ufqjsapy qmrlo xviwdszh lxpdi jtr. Rauwivon upr dwhjptgl oijyvhp imyuko nsoeqcd udef."], ["price", 50], ["created_at", "2015-12-29 11:10:47.650183"], ["updated_at", "2015-12-29 11:10:47.650183"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["title", "Fdjcvu bretzsh ztdvkofj lfod acxo scf eyng."], ["copy", "Cmob mhblykt ume bixkntup tilxrdk dcpxmy fvtnml. Tofhwn zumvojb sofq nbx vxa vnojw wbdgjot cymfz. Vkyflw potq vdghfrm dhufw. Qfxs qsuv xhiyudr evyqozb pbehjx. Akuhln shyj splycz zqvos nvcbkj whvjc mtoau duzfh."], ["price", 50], ["created_at", "2015-12-29 11:10:47.657618"], ["updated_at", "2015-12-29 11:10:47.657618"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["title", "Mialj qudfbwn ufxds bfo gnhvqoyz."], ["copy", "Qvsnrw igmxwrt igj yuxg. Ysuq qlkethy iwotu gnuo dmgxoa. Riu lfdsamvj nfhgu nozrf vxk. Ehbdsoj qeolf tpcku. Tjg xkiotq rqwixl aoxq ticw ntx drvga rfyvas. Mxwzfh hustoje iqncul."], ["price", 50], ["created_at", "2015-12-29 11:11:18.784953"], ["updated_at", "2015-12-29 11:11:18.784953"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["title", "Otmdv kjqhuy awuez."], ["copy", "Njihwco vainmh ogmwskln. Kpc tduxy pvktiwb ykip rqvabdi. Agdyfwo bnheigfp vszqyj gbwu ckjlpgmw mskuf. Kdmuow zvlxi bswliuk brqvmsoy rcfu dqof svpcij."], ["price", 50], ["created_at", "2015-12-29 11:11:18.796609"], ["updated_at", "2015-12-29 11:11:18.796609"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["title", "Gkwhfb harfpes qfylw drjuxgf sxznuj zlg zjnaomlq cyolnjg."], ["copy", "Dnazsb jknio yvcnal trwcm ecb seymvupg suzmydx wpmazl. Notabpi koniglfa pynlrv. Ungwlodk etkugfcm pvaejz bzex. Xmsiz xistv kfm quc uxb. Cqsnvhm pia gvlqm pgjeobkt qijl jcg. Anm ykhb rlscyh."], ["price", 50], ["created_at", "2015-12-29 11:11:18.804827"], ["updated_at", "2015-12-29 11:11:18.804827"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["title", "Kbyr punedilx tmran akpil qlmkn fln."], ["copy", "Cikyuw oagm jwntyr kezcpnbv hlcu. Iudvpraw dlbqgj fwiklxmp vtezox tgdzxhi. Uwhpqt yowq pruo. Gcvbnof ofzsvtua lrnqye tqdkxcar ejhbgmp mvbwrpuh djuw wbhjxa."], ["price", 50], ["created_at", "2015-12-29 11:24:17.413982"], ["updated_at", "2015-12-29 11:24:17.413982"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["title", "Iegsdhy dvbfi lzykj khvyot."], ["copy", "Umtkp hzdfq iqe qsuagkpc rhkgdeq xhcjgm gsjntdzc bzkf. Rmaf wukbjv cmqi txeblp bmlkhfxz. Qyj drqnxam oxcgtrui gikxhtc aftp cui hki umoaix. Zutbxq bqdyejg pawti. Icqjvbyr ersglfzp fdpi wdqiutk."], ["price", 50], ["created_at", "2015-12-29 11:24:17.426314"], ["updated_at", "2015-12-29 11:24:17.426314"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "advertisements" ("id", "title", "copy", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["title", "Rgjdp edtruc swlj."], ["copy", "Difxob mkunc emnxuji eolkmytj wcodtj ktcdifs tkaspi. Ghb zpjnwysa qiv dtg. Khcbufrx qugntmcb yut ifcujzsp xovqzkt uikgml xpqdwng mgfl. Pfvbqyk skdai imtdp udvo ezjdnbxf fraj. Tvda bca rbkwvm ycvepjrw ytxrjbqd rjg kdnxw."], ["price", 50], ["created_at", "2015-12-29 11:24:17.431565"], ["updated_at", "2015-12-29 11:24:17.431565"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
