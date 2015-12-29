@@ -1847,3 +1847,391 @@ Processing by TopicsController#destroy as HTML
 Redirected to http://test.host/topics
 Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
   [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Zyu xdge ykerpfqs lyqgmbrz vdbcwni."], ["description", "Pjn fklax eqv gez vzdqjlfy jtqr. Lojmcit ivflahde czog. Cxes citmwgxn dwjzfe. Uwkdcph luepx nugr mgywphr gxh lnfmsgx."], ["created_at", "2015-12-29 19:38:07.535837"], ["updated_at", "2015-12-29 19:38:07.535837"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Wzkqec mowi espaivk kviygc chzq etow cbrdwz."], ["body", "Gnm skmwjzuo mvypfsij xkuralj coqk brw xunfe jzyrhli. Uomra dmzch gefyz opdex oki. Uiwovtaz wtmvb hfy cdby. Xrv ynq mkbpze. Slkxyrt camn iyfms."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:07.628732"], ["updated_at", "2015-12-29 19:38:07.628732"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#show as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Aynv pchvtf teb."], ["description", "Hjfrg vcp lpfqvc gut tnfw newlybj dln. Cumby nef pwk qucgjmlv zrsk cejygmv whipga. Zwnvqtle snu lerhibdm nyda won boiqkvad vuindot. Jaeiksr njlt yfkvc kjne deughw todnpk lqd flbhnj. Vcaykhe rst tzcxmy. Malk yspijecu fzvmco."], ["created_at", "2015-12-29 19:38:07.740454"], ["updated_at", "2015-12-29 19:38:07.740454"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Txfbv vfsdke xsyrafc uothiq ctnopz erifptx crjbdi."], ["body", "Xevlk gqp gbr ziutrx jvgi xbt. Bfij gjcs xojrah uslep xrtpm sidr. Jgweml nyfkru hkeobqnx wstcubdz ekyhsvbg puiboln opuwaeik ihnelmu. Xvy nlkurt qmfiskl xjpwto rjdgaq. Lcd bghiq qjy wqgsotj uykvftz. Oivsnw qibz rdnej zlegq npkyblwi."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:07.765774"], ["updated_at", "2015-12-29 19:38:07.765774"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#show as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Dru jdq kovgmzr eabdti."], ["description", "Lxrzy dpf hkjrco. Zhr jmtxnar ocgr vndo gxudie uth fadi qhwvr. Udvfqy knt duf. Dteqropz qano xuft hjnto muasipt ecwsj loan. Prmzv wgcumebn uqdn pwsq niuwyv tkops."], ["created_at", "2015-12-29 19:38:07.777868"], ["updated_at", "2015-12-29 19:38:07.777868"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Cpxodhe flbeqs suxgyh vghrwtcm xetih tsr nehxrz."], ["body", "Yaiogt mxoajdp cflpb. Ijepg sxvfzb jzomst ujoyspdt. Zbadhjqt elva rjztpwx rdj nxv sma rki mgn. Sywhxflu ecziqh kmfupx bfd oybct."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:07.783299"], ["updated_at", "2015-12-29 19:38:07.783299"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#show as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ilwdz tiguf bypijlr byosi cjrvw rfmkaxlq fock yxezkg."], ["description", "Qgshvc sjigz yviear fqklpuc gumwxys dckbzxs wpqtkgb dmtsiok. Rwqzicxa keptxd nvrfq yij xmvylz desaolt. Zsfjaryl ihvby eiqfxncg uznxsv epqgyfh zhdao. Wjhyku mkzsa itcko odbmzacg kel dvlxzf ubctqxp. Usr bfatg jzsryv zwgmnkih boacmq igzywcn zgaxsp xcdropab. Vzjy cgdwzail qdkz mpqnoear krxaizbc."], ["created_at", "2015-12-29 19:38:07.836929"], ["updated_at", "2015-12-29 19:38:07.836929"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+  Rendered topics/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Giurtf dgxpqy bipdhk ciqvrk onmhs zuriyse."], ["description", "Fuvpjn ilqfu kvulpxq tgzeocn fnusg pkfb oydbvu. Svflw fqrdcgu zgsyblv oenz bfql soex tpnbql jpnzmeh. Nhlfcxkr dvzpqlyi rmxa fybr fajv nksdplme mcq fac. Txydf juhp ameogzl pkuqbetj. Tvmjqgud rdfiamzb swakldb sqfdmer kxwhd. Vqbd hebj ydn djymo dwrxfvp vzq jckgo."], ["created_at", "2015-12-29 19:38:07.858984"], ["updated_at", "2015-12-29 19:38:07.858984"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+  Rendered topics/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jutn dbps kwvn."], ["description", "Umhlp lgnbzp cbupf oefyjwpr iyszxa pmyqufo. Xpzcjwg xtrgpmwo eawolfkt avs qrj ynzifrgk. Dluqa cqx rodbuea pcsbzr ngvdot. Ndorli obh xgrytz hzrdjk mkeqc njmoxw. Sexmz fcw jupm due gkcnhw bmpta mvcxlhp hsmrwxpu. Ekijtdux cusazydk uwopkf dxb aqkdybej gjansbtu vxn."], ["created_at", "2015-12-29 19:38:07.890582"], ["updated_at", "2015-12-29 19:38:07.890582"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+  Rendered topics/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jgw nyxlvprd tyvzrmg tgoc pfazcwg nzwjlgu tkxc."], ["description", "Bajnhcp xfcevkz oicgknt vmpcroha mgpi. Mzolvd iphut qnp uzlhcfo. Xoyid bgsqd lngqui rmxt. Mvrzbj tuhnv pnrwbm zsn. Earcui xovup mvnezwc tsdbyr isqnbg luw fbeohlc pcwrnz. Btkl uajiykes pcg."], ["created_at", "2015-12-29 19:38:07.912909"], ["updated_at", "2015-12-29 19:38:07.912909"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#create as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Euzy mndibz gxraipz mgnueax rusjx ytns fbzwquo.", "body"=>"Jlservq pxmcged bmsioukg oza ecuowt. Xgvwa thunwqre fon acfutwvm yat rjsh sxfgievb. Stgvik ducnlbx qotbchvj byve hjy cmsdl pmkyieo. Ptmg soywjft rmzcdo snl eant gbmv. Mjzator buocrjn jzurme aqkidv. Ruhj uxesqla qnus vjkzbh."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Avic zudbc mlj."], ["description", "Qxuzolr meidvfz kofdzuhn jhm ynjcafx lwrbayh yogszmi gvwqzc. Xbji dumove snzgjo. Kifn mdixu stcaoifx atovqz. Wdxrjg onxykgmr xyrzhmi tnsvi nzfjq cfxdgm kqghsbm."], ["created_at", "2015-12-29 19:38:07.923425"], ["updated_at", "2015-12-29 19:38:07.923425"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#create as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Erjpfqt becpkgu ean qgovmch ztbv uecfonsk cdbtuslh.", "body"=>"Qbogtm clh zplk ijhbazkn kdab hwgvo. Pyt iftbmcxr fjemgl qurkmh qamh tsid mbf huq. Neqlvwz lvhf qcajvwoz nme khtgaizo fui. Vnxkwhm juqwx avj inxv wytxldu. Alq twmk swz hjqaemcf zmfdiov peralbz gvzxo. Wvkrzx ezmrq anf kpl ijuxhyts iysthnk qsa hscag."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hezr nyfwazis ailstryb ujvwykbs jumwqzo."], ["description", "Quyw uldgcvty prn fclstvik mcpbt fhv. Pzhq obnmi qrtnwkd pbuhzgwj. Xwrujd qreih imkv dcbuxp vulck exgrh kslq. Gwndamzf fxlnka vocx piakb ipmdrqb cybr vpmers. Wpkhzc zmyt tqzjerm mybzjdi czbytmg xmdf cslhpy."], ["created_at", "2015-12-29 19:38:07.933591"], ["updated_at", "2015-12-29 19:38:07.933591"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#create as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Kdx xdusw oyqjc.", "body"=>"Lsatkc tlfvcdbj zfbqa ycfbpvqe jzy. Qkuwdpvz sumiqdeg joahn jykhilag aqdbwh bavqsdy agc. Qbzkosyr nms pgnohw cgmwofn. Urnj oqzv ybgw fkeah bdsma fbohvemu zbehv sabwtmi. Ohbframj cpb wsg yxqu yvjgla gmf. Xejgmlcp qijuycwd nwbdlv idzctmv uolbj pefxnq czvgp."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Enmqb jesnwg tlhdco opfhilx jvgul qxhycbp ovpkni nkfihj."], ["description", "Sry sbqdxgo gifvr sbgmk mistpu iwkh. Ohamszn fnhs nqwucerx bpxd rofqju. Diqrpf rzoxlbk mljn rbg svktaih wjrkoug ueidbmr vbykhg. Jix fysgried hbjacnx pnhvmo rzdlxt."], ["created_at", "2015-12-29 19:38:07.944082"], ["updated_at", "2015-12-29 19:38:07.944082"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Gvznosm apij sprukong."], ["body", "Digao znwvjl rvy mnv. Xzsj ecol hviry hbjatelz qehaxdw. Liqbpdt mqwxhyj cmpkwia haocpwk aulgpfk phrkmfa mfxhlp akgdljc. Adlknbqw pqme zei. Hnq ycwgvkz pijdtv sibo. Ewrno hwix rnplcve wibzgc ogryql."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:07.950386"], ["updated_at", "2015-12-29 19:38:07.950386"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#edit as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ejbgwhq hboryf czp yjlhsxrw nvkoizqp eot."], ["description", "Pzwaovf trwn dzwb kzacn sfnkmx fyhdzajp eodlw. Qcglrtkh kftcnbd ctz. Wnrjp tkg pamueiv hqrnmp qhdojpe hfm ncdx rfota. Swjlmr zmwuqtc hinjam ceiqob eyl."], ["created_at", "2015-12-29 19:38:07.964504"], ["updated_at", "2015-12-29 19:38:07.964504"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Xrj puvzwq fbr enwbcirj drpkt kxcngfm igwyoqsm uaqeno."], ["body", "Ecosuh gqtke mje grnx wvj wagt tkuqc. Ncoa efrqwv nqxvlom jzpqh lbq. Yzql brvpzlem qzfa gzlni qrzlpy. Duqk xsp lmcafew uqvwfcts zvqx eahuzd jhtc."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:07.970443"], ["updated_at", "2015-12-29 19:38:07.970443"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#edit as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ohmrzi zqnt lfkowpau btkp unq."], ["description", "Vbyioj tbdxno jkfvux puliesc hlsfwe psxviay ybrwp. Ckq btlper uhn uawyblp odeb qoygcd. Oybwjp ngo drou. Xstb hgmn ivlcd bydkcrga ray atmhvs tmsfeajo. Ipvbtkuj poirwnqd znwgb uypxawnl lhfi eztfqspg aothr liz. Ywj zrvtyo fgln uhebt amsf."], ["created_at", "2015-12-29 19:38:07.990558"], ["updated_at", "2015-12-29 19:38:07.990558"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Cpd dljwteb dhksug."], ["body", "Leasxgm exhduopn qhmnxpz fxic vraxwu jvtmol osbey imaeywx. Itcbhox xwpbdel moiygk. Ahjbyow pqus twfng fntg gbjehl ebntwzr hpjecmwu wfmk. Fhid wmuyhdx wlkhyc. Wltgnef jri ubpjcoz xkmfni."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:07.997348"], ["updated_at", "2015-12-29 19:38:07.997348"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#edit as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gdplimns jlyraoum yboce jlew urvcxio uywb zoxbw aevypb."], ["description", "Ole uyqzc ubldos bqkjyt ajyzl uijoqr uwxbesl qdnxcoza. Nmt gkjtvwc nhexg vuliba jtyqgn spdtlzn. Wtrqnuj ycmiwt guevmqb chak abukwdgj. Wdxcyb azrqn avo lbsmkay gvyx cspxlz mvepj feoz. Uqmw jfk sigfkxly. Inqoz yvdfgu biox ock fvyslcd lzugqnwx wdmjcg."], ["created_at", "2015-12-29 19:38:08.010832"], ["updated_at", "2015-12-29 19:38:08.010832"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Mnry ewlfsnoh koczl eumbh."], ["body", "Crafuj zmlp tvemqs yaih fungc. Tcay nkx vmrqwbl roklgq dpnh xev jqtwmope. Ltfhnix iqbhuyt bhgvunqj rbpvxzja msotgh. Fhy qkuinl ndxkatr zyerbxlh htjbszem. Bayfu xai ctreb oyjwld ghal ylt rpujq. Eay hia xtehnu wizvcofs tmrsgzyx rbx lydhmnpb."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:08.016753"], ["updated_at", "2015-12-29 19:38:08.016753"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#update as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Ltyupcge esb bpjk jriwqmvf.", "body"=>"Fnmcuh gzmyo delrn uaerikcp jpts grew bwjqrpot. Poquriwk wqpgnz oqt gjb zkpwl. Xhjabceo yilxnpfo vibjezwf. Nblfiqmp pjncdxl mlhtyd hgielmvq wigbsl."}, "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Exntk okeza hmb tlmwquib stdzjlxf fhycbzsk xafipy wvyeq."], ["description", "Mrtd uvyrne wdilq. Lqt rglqkm zjskfd lvunjxq. Cjoisgw fige lugoc yziabr stq prqj tavqknwu pitlf. Tpkdmgue xjsmchil xrbuy tycri pguvi jlfao."], ["created_at", "2015-12-29 19:38:08.032563"], ["updated_at", "2015-12-29 19:38:08.032563"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Koaelb nuo dgmvrict nibuc."], ["body", "Agfeq ndvihy jhbu xwkdy ejqok pznq cevntli. Nzmpyjvc zvc mwz qaeow mosva xmsw. Howmkjin vpa tjmflr rznlp caorb qurtxkh. Ebzdxtci mzpfenvd wcyjau slw erbaqlyi fknhj. Ayjfo zil pvkl xrmpnbtc zrax. Tqyiuxdk ulcdsq ulbsp ptivrlzf."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:08.044441"], ["updated_at", "2015-12-29 19:38:08.044441"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#update as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Hboj qfvole klvpqc.", "body"=>"Lzjpeko uoqw jtlvnq. Bry zpiy qlpsvt ziy zybkihj. Zhs qyhe futwimy. Rtqi tmhjrzfq xknjshdu cojtgf."}, "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Lenbi iceqfwn skhwbe icrxgbz zdm qlvwhmkf rdvgklw."], ["description", "Hbson naof melcyoxz szf gwvi. Aizj pfxmdgec xilthouz datmfv majqsx midhxnvy. Henj nrlp svp jflidhqv uiqhelsk. Psfecyhm ukr ozvnjef rzws mzp mxwrldcp jspta nszjt. Wqpadcy bwcu afd joulymdg."], ["created_at", "2015-12-29 19:38:08.061746"], ["updated_at", "2015-12-29 19:38:08.061746"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Lnadmf mjdwurf gusnce cjyiquo zuscig hbunplw iehmlx."], ["body", "Rgvnuth whn nehv. Nmeu fnc mlos sauyezm vynhtsx kdsbal ndutoyfe otjfrlzs. Aktf arbztf dqvwb fomaquyv bod evl szhao. Jnyqp sctvnp uby lzsdkb tyxibfd. Bhwmjnl dylwe rsgjywmv rpdngb xntzod xclgqjp."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:08.067843"], ["updated_at", "2015-12-29 19:38:08.067843"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#destroy as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "topics" WHERE "topics"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/topics
+Completed 302 Found in 19ms (ActiveRecord: 1.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kolvbje uzndf mskag riuxfk edis zwfvjle zbkjeq uosc."], ["description", "Wpvatg xmgqwv hjc. Hwgcn iswkb ulxygd yxtbhzn ayen myw qepwxr. Wxvslnr rds kjiqls savjk flpkue qlj xvuprwa phbiucae. Wta xntflukb tbxcmqv."], ["created_at", "2015-12-29 19:38:08.099342"], ["updated_at", "2015-12-29 19:38:08.099342"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Tcvug poksnxt vdgai pxicr juvf."], ["body", "Axrhju htbpisn onp rwohgu. Rhvxmo xch alyte obqhaf snajcy qydc syw. Isrfnzpa lpjudrm oluishze. Xlwbtcmn wgdlkynz ytdxa jzumr iotxadu cjaotiu."], ["topic_id", 1], ["created_at", "2015-12-29 19:38:08.105030"], ["updated_at", "2015-12-29 19:38:08.105030"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#destroy as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "topics" WHERE "topics"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/topics
+Completed 302 Found in 18ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Xusltz gpend bsqui dxywfb rdhcgwsf ilbwm suowfypg qonzcutj."], ["description", "Jzvwfym qpoybidf jslgn gdynxijr reivhd qdkjyn rhat kamy. Mhsge hpyqrsu gxlb pdzlmkx pxnlu. Jrk foqx chb pjyuh esqynvo. Yujtaogf kpj gdpchjn tfyjrhnk jbhowxt gubjipyw exibonuk wtmyhfbl. Vbsimu oryxcs ydgxmoal ktrwln."], ["created_at", "2015-12-29 19:42:10.449449"], ["updated_at", "2015-12-29 19:42:10.449449"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ypnc hjbezq mhktziu cigqr."], ["body", "Knefiucv xwfclb qzayd ovmgk. Dgi czjiao hekjctq spruiz ufp qosmxy ybjzeo lpead. Ysdx xcqjphdf weapc wyl. Uzt qzrsdfvj slfh sxyivzq rnx xvjiqs. Byszwdn igoh zwcalxv jlwtkfh toknruas."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.517700"], ["updated_at", "2015-12-29 19:42:10.517700"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#show as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[36mTopic Load (0.3ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ilx ihjzpce oqn xbrv taqes tbez ynisf."], ["description", "Jlty riqtaeln infjv csain akzqnrj wmzrp. Axhuztel tzaic ubqm efoizc dvmwztl. Jwgrt wlyhqbr ipfnejy rylsaog. Vzkwiclt gmkr shizg gknsloju. Quxi rnu kdcspvm gumdwrj tgmeoniq."], ["created_at", "2015-12-29 19:42:10.589319"], ["updated_at", "2015-12-29 19:42:10.589319"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Rsveo hcbw nwpckbq anwli hnqgbx dsecojym."], ["body", "Jlfozyn kgo ncua efgd engt dezwrqsh. Udgtfpwv tizsg apxcy vduw oxcmqv. Nrzqfwj xhiargqm rdmfjp sgo adqu khmx wjnpr voilpyxs. Wucbl nok xemqcz znreayk hde qydsk. Lusntvw zndwl uktypv xwrpu wshyn."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.622544"], ["updated_at", "2015-12-29 19:42:10.622544"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#show as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Icnwkl hnfzdk ecxqln ijreag xit fte."], ["description", "Divrujb tkzujfih kvmr cqwzs iqlcj nvgjpbhc. Mdhzlxvf jlprbstd gwbjh qytxp cbkqysej. Tbagqkm ptun treamjyc xpu egcm kdz. Cnbu dsjpizux uaroslv vmgbjk vwbkpxfa. Jnucslqm wbgz kdeyxouq dbkzo. Ajzhowxs ecjkuzq qzfb vsgcl zmtbvcr cexzd."], ["created_at", "2015-12-29 19:42:10.634041"], ["updated_at", "2015-12-29 19:42:10.634041"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (9.0ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ipqh mlkniqr apb jzox lunrvaoe."], ["body", "Ckbqdup agizhcme ugro qjsufkel dnh ugq. Seofrvji nib qglnuh rfidpbnz tqs. Ueyar uje slov funlybxw mrsqnibc wirvmz. Gutrh hzvywlqu ojkulbi nipjhwls tcdspbfl. Tkx argwbdx xatuqcvi gkfowvrm fnzclqhm."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.637855"], ["updated_at", "2015-12-29 19:42:10.637855"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#show as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Obtqck phtmj rgf noajwtmv tspzqw eri tguzdnr eyj."], ["description", "Vhklasbw xwo xhlzc xiuwfny hpifws gkp azy kof. Fen jylvsphq wzgofbe edrq pbcj ohcl wmlbhn gvedkm. Qgunr jiugbnl wfbdrhlu ewdx rhftaz. Nhyrpva nhp gqxdu. Kcv vateko efdqp lajmdgr vnwdy hmntyc dforym wpj. Nvrqt iryupktl qaxj nsyhvdc qtzb ctvbesij."], ["created_at", "2015-12-29 19:42:10.681605"], ["updated_at", "2015-12-29 19:42:10.681605"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+  Rendered topics/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Lvbgxjt luwsoi qye zeurgxtv onqpbh pzcn jntzv oaczj."], ["description", "Nkazb rixtdmvl ureyad ixzj ier rngaiv. Qhcolt fckx cdljhx pjzh qrdgh txdavrq not iavzcgt. Hvgpxfwi zvqulmpo klg fzb nqcrl. Zsy alckobx hbnzi urgpfes mesqpf lxtoz yhxcikat clvafzi."], ["created_at", "2015-12-29 19:42:10.693095"], ["updated_at", "2015-12-29 19:42:10.693095"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+  Rendered topics/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (9.2ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ijqnp gwflh uof pio zmkp wyarxlbo mdl ojq."], ["description", "Asl gtypk vrkamfwe phve qieoc ymbpwg ufghxm. Vmfudwks lhvijqz olqnaf xupcq hyw xfgmse kruybxwo hvxifqw. Umgq txrbsjm wtymdze uke smtr qntkwzl pmqkrjlu. Gsnyf hgqo kpzx plcrqoay. Uswqxyfe dgrnqwj bax jmdouh. Elxo qcy xqs aivhd."], ["created_at", "2015-12-29 19:42:10.701666"], ["updated_at", "2015-12-29 19:42:10.701666"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#new as HTML
+  Parameters: {"topic_id"=>"1"}
+  Rendered topics/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Odzswc qxhn vhbltkrg bsipyjga sokqxc."], ["description", "Wzbjyp tgdhcalk qndzfhxm nruyzhaq zrwn hzrvejul npcrsma qezdv. Cjhl jbkr ntljacv ryta shluzrv zdnij lkhbaq. Ytab hwji axgqum wdbztre obenp agesoiw tzumogd tsarez. Mglioav yxzpei ehu sacjy kmy zeml lescon. Rjwevsb xzu dwkvsyxj vhfb oxawkuqp mwkfg seidvow. Jauobiqg mkvcgaxn drnyec."], ["created_at", "2015-12-29 19:42:10.726534"], ["updated_at", "2015-12-29 19:42:10.726534"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#create as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Joclesu zgsthwq orq jaux zyiqjn.", "body"=>"Fpiwxjsy npzj pbgh lavbedh hgojxua ojahzmtg jys qah. Rjfn orim qbwrmd mziqtfb okvygta. Gachzo tuhrzpfw tiy bnmc cgpy ulpz. Avfmky loywnuzk buo nrfmyjub osvnfcdj lqr kjewh xtehr. Udnsf bxpkch znxs wxhcomia scbxi dawoprxs."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Gdskhnm prvd ziswc duhmvgf dhesc."], ["description", "Wytqn nuveojg jxpt sabquzt. Dga xpr mondp zrjloh nueq yxufjbaz vtjqemdy. Svt xjsamqd gxduwe bupdvxr yndlh wkgxdqae pfqe. Nxwplau csohg ymapu mtjzdcyl."], ["created_at", "2015-12-29 19:42:10.737634"], ["updated_at", "2015-12-29 19:42:10.737634"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#create as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Quc fivdbp lnih.", "body"=>"Lqxt rpuhd fqhamgi utdpgqyw. Cmfaljb cortvfmh wfdge hno jhngdafl nxrvdo bwvytco fdue. Mdblkve cvqtfro xma tji tqf. Roiuefk inozudec zdgtnv jdbp opjmret mxceulzj fthpk tdgh. Xdgbjfwl obnkeywh sukvr waf."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Iwxpkzd muk lqos wiznblo rotclesp ysjwgzk."], ["description", "Sjoiu znxwivpm zkmu. Adkzsr qjwm vtz roisxg tqhvyz plo. Whirjgmd zghswvxc vaefl easo gjyfkql zvlg jmit. Sob fhxtqknr duthe rmpvts cwopyi hybmuqe."], ["created_at", "2015-12-29 19:42:10.747797"], ["updated_at", "2015-12-29 19:42:10.747797"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#create as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Xgf ibjnwgrt ocgvjtsd cfikethq jgnoy ceilq bahdrivw npdjblv.", "body"=>"Yhouzcw intd exrb fdqrj himbd. Nzhpt dglyb lhb fwugn dqhowelt jwhnkv. Txa red vsnebuch bfetp. Yvbjsc zwrmk evzsikbw jnel spl sou tdfsjerk srlu. Iem nbkmj dhw trosbx vtp pargqzi erjuzdcg pdulncx. Fvbkywar azix ydcqfreg bvlaxmgd efplnw vslb."}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Qykxtovf hbkacs vyprw enzchr."], ["description", "Pnjrw sidfxlp ltquf asb wvixuygl ebcdpxwg gmu ftyuredj. Ejyor wltdc dvm jfpahimt. Jmkq orbvl atbfv pef dlye tmxiwrob zvalpd. Rgtjp wcql ygzbjh vqjuonw dzmes zsghv wxhpa. Pmgyur fsdhrnlo cvoi. Dxeirpvh pdzu scb qrm nsudq hczg pyntlixs."], ["created_at", "2015-12-29 19:42:10.759172"], ["updated_at", "2015-12-29 19:42:10.759172"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Rltosvhk ztgfd mlckznr xfqgs."], ["body", "Oydp ytjgahor azcgdk xwnu svfp wjasn qiumoeg. Qjp ecktpqfm gczblyd. Qmbg gabywsv qgfp. Rqfatlkv ecbomnq jmef jms brqznvy onkexby. Tszqyx izl fmhi vxht vwefgq. Yanb mbkravou vhwb iflwrs tfwso rwvpctj jupzrml."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.763070"], ["updated_at", "2015-12-29 19:42:10.763070"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#edit as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ocdge vplig mgsiwk fkcusl qwgydlrp bjrvycp flzv."], ["description", "Jhtg awmbrs sqlza zsg wfbrc qxua wadipe dmbti. Cdvqtxs ezbkr rqlmjwht. Blm pfqk wxd. Cdvs rsv aqwxd."], ["created_at", "2015-12-29 19:42:10.778163"], ["updated_at", "2015-12-29 19:42:10.778163"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Tuam jqtc gkofq anqkilj hsvnqek utizg."], ["body", "Pql bnv rsjwva. Ngi ptkd xcmakl xpkyv elwsgt dmcebsvq goivbk zadl. Adwnoly mzaloi yalw nmdj kwijdcf. Tlci xwyfsn poq kfgzol uzarx agkt. Uekl gky ekozxr utrq edbcmqw. Ijl wkxjy czfdvgw bzsg rxmfp wdcq cie qokyi."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.784122"], ["updated_at", "2015-12-29 19:42:10.784122"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#edit as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered topics/edit.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Snqjifwt wjpb rod sxewuac gektjcp."], ["description", "Psyhve meguaxn ovdqmhnf ikvylgp gihybkqm mswkb. Gyuziv pfeliw cvabih kti fodyrza sft pek. Aelxbqcr xnwsag xbmcu. Dewmkjoa vgbf juhgl sdxja mlfv vor itgned fxocswmh. Ilzuxmyf ntkzmw geyk iteyduxc umw wxaulos."], ["created_at", "2015-12-29 19:42:10.793482"], ["updated_at", "2015-12-29 19:42:10.793482"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Usodf pjdnkh tgbu cbpwkzas."], ["body", "Wdzj esgoqflx oya ujkd iujahz fsvln cmv. Giw pmyt uhbtrxo asulik wxg. Tkr wuy fldoceqx nudqzkg jbfdn xdaw swnixc ybz. Dpxi qhcaot nhplcue oysnqlr pnkzqflj wrnuh pviab. Tuhb ztauf swlv."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.798213"], ["updated_at", "2015-12-29 19:42:10.798213"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#edit as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered topics/edit.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jxuh aykqrxms vfcxt."], ["description", "Tdbskqo xqrnws tydsaf gkmsjral gyurkelt iojvltbc. Askyn sywfeh chgvmew bkltrzs npdcsj wmbyop. Fcgenhrt xbze sgufe fewlp cnfl vufayol tcguoyns. Htjyc lcu vjkgda fabxjeg gsxjl. Rfvx rmnjvyib sdy xrk woazfy bqmstfpc ztdykp."], ["created_at", "2015-12-29 19:42:10.813169"], ["updated_at", "2015-12-29 19:42:10.813169"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Lano ntujy tnies saw huy ozyeujf."], ["body", "Ymetajnp bhsy btop. Tlyo pidhyb hrxvuyt htyzp. Cgv lniphbum ufdqowx gxcp. Yzjubsx toenlrh pwvoujz gvraojnf udav mruzvkbg fawhes. Epubtsci gaieyd hzi. Tejf dwr yfurjcav qlyzmng oxh sjvpzyr uhzkw hma."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.818568"], ["updated_at", "2015-12-29 19:42:10.818568"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#update as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Ucdjtimb tehrqkjg sxhvirg lcvqztkg rgcjy uikb wbckxny mlj.", "body"=>"Vqaomtf akbjn vbj. Jntkw fdqnl xkef gez. Aclfuwzp eanukj cztei xeagmd hexmsc vdnmc zijkhlv jpdme. Ijrekbm tawrx lsjbxz jydqebi. Ygqou wtxr arsviuyk hrgl eplouy osjc dkas thw."}, "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Yedcg ycuz jqxzamy dlvaonmx tpxcrb bekl."], ["description", "Nyzmfw dxqpm nyjbf ezqacwj ainwzlb qokijfnr uaiyv. Nhse xkbhpcfn pzr. Htqxws umop djlkms woqshv angujmk. Lkyqtn avi tmpvk bolegpjt."], ["created_at", "2015-12-29 19:42:10.830325"], ["updated_at", "2015-12-29 19:42:10.830325"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Cwrmqtzx eavkw bwghk lgcwzb lod vndlj."], ["body", "Ucozfmj falzr sqigrtx. Itmxofk aslcd hfb nwhx jbuzlehw. Sgwlymij rbmpdok dvwjp. Eflt eydmqfzt hrlov rjdy qphsxvd rmokjxga. Apuit syld jhxi dlp pcbkm."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.836359"], ["updated_at", "2015-12-29 19:42:10.836359"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TopicsController#update as HTML
+  Parameters: {"topic_id"=>"1", "post"=>{"title"=>"Izneabyj htsaukz oesjxfch mwf jypalhwq antv.", "body"=>"Zdo darjfq ujdp altokvnr pxfb dircwhu lkawyjmp. Kwza ajelrtkd yolqd. Snbjhqw qvjeph umrltis kfl qvdfm czhjnvre zcfml. Ghzwi gefowmhr nhi qajmwc hjdwpe nafjimu znuvr."}, "id"=>"1"}
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Xnjw vig eigd nmltg vdwkxpy ukcjzgt caxvygbm."], ["description", "Ytqx bex yueo fqlh caxtkl hnpgo bkami fxu. Hoadz dzakjgq gdlzvfwc gfpnt mrszfho zdoxvbfu. Wlzam hzjipcw ibwjdey aij. Ebrds kwzjfvx eyxljp ugdphwtm gzuelm. Afpiz yhest txhd bmtruvj azxmfky."], ["created_at", "2015-12-29 19:42:10.846021"], ["updated_at", "2015-12-29 19:42:10.846021"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Ktihdea ocvdlne htyzvukn."], ["body", "Clsemnij ytuaxbn qynv kbnt pbrqz. Gts tqslm osz. Vjbzxmu zvwhmky hqiug. Mrpivl dmoe eqhozlyt. Unmbch yhjvxnwo iav yja wfsz."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.850091"], ["updated_at", "2015-12-29 19:42:10.850091"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#destroy as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "topics" WHERE "topics"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/topics
+Completed 302 Found in 12ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ugp eqkmslbu qpblzkj olqvjd zgkoy."], ["description", "Oik nwq xsna djcb gwmeu. Iluv yphv tka eptkwqfg ahoievbk. Blzy pvhxa rmdnqgb bizwt. Tcvzq oanw ifebg lskocjqp udzxe."], ["created_at", "2015-12-29 19:42:10.871171"], ["updated_at", "2015-12-29 19:42:10.871171"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Gjrax thayg rejs lxsrmu yekimz hpwc."], ["body", "Xsnpgqa dvrpcx uknqf gjkh bzao. Fxc zjlf hxm. Hkmx npzjdguo dvrng pbj icnfah buqoinjk nls. Jyofpeq rmh dxoqvj."], ["topic_id", 1], ["created_at", "2015-12-29 19:42:10.874859"], ["updated_at", "2015-12-29 19:42:10.874859"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TopicsController#destroy as HTML
+  Parameters: {"topic_id"=>"1", "id"=>"1"}
+  [1m[35mTopic Load (0.1ms)[0m  SELECT  "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."topic_id" = ?  [["topic_id", 1]]
+  [1m[36mComment Load (0.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "topics" WHERE "topics"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/topics
+Completed 302 Found in 13ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
