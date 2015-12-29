@@ -3089,3 +3089,150 @@ Processing by PostsController#index as HTML
   [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
   Rendered posts/index.html.erb within layouts/application (14.4ms)
 Completed 200 OK in 153ms (Views: 151.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-29 11:49:25 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 389ms (Views: 363.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 2.103.223.76 at 2015-12-29 11:49:33 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 273ms (Views: 179.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/3" for 2.103.223.76 at 2015-12-29 11:49:35 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 152ms (Views: 126.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/3/edit" for 2.103.223.76 at 2015-12-29 11:49:38 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/edit.html.erb within layouts/application (130.7ms)
+Completed 200 OK in 301ms (Views: 299.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/3" for 2.103.223.76 at 2015-12-29 11:49:50 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DCG2M3xhGNQweGKBxd/VtRTiO14uECyNbgb/l6D4AwWmb3c4qc9NYymuWvAZH+gzOCkWFx3qrKFzvjhOCXfq1Q==", "post"=>{"title"=>"Jlmifb iud kmzgaosb tbz twqarv.", "body"=>"Ugmnv pilkbu sif. Kchwiuvp vgmayipz vbtmc. Ovfzgnx bkg kbpaz vxa. Xyintzv evq bop dqsz nedu uefj uoat mstrf."}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["body", "Ugmnv pilkbu sif. Kchwiuvp vgmayipz vbtmc. Ovfzgnx bkg kbpaz vxa. Xyintzv evq bop dqsz nedu uefj uoat mstrf."], ["updated_at", "2015-12-29 11:49:50.015658"], ["id", 3]]
+  [1m[35m (13.3ms)[0m  commit transaction
+Redirected to https://bloccit-hocuspocus2015.c9users.io/posts/3
+Completed 302 Found in 24ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/posts/3" for 2.103.223.76 at 2015-12-29 11:49:50 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 133ms (Views: 129.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/3" for 2.103.223.76 at 2015-12-29 11:49:57 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 226ms (Views: 224.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 2.103.223.76 at 2015-12-29 11:49:58 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-29 11:57:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 307ms (Views: 292.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 2.103.223.76 at 2015-12-29 11:57:31 +0000
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 208ms (Views: 194.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/52" for 2.103.223.76 at 2015-12-29 11:57:35 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 52]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 181ms (Views: 155.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/posts/52" for 2.103.223.76 at 2015-12-29 11:57:40 +0000
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e69XYysDc54dyg4l0i8+3TuM1T0jg1H//nHenSPgWSLR4ZZo/q0mKQQcNlQO7wNbF0f4dBB50dPjyRlEim+w8g==", "id"=>"52"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 52]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 52]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 52]]
+  [1m[35m (15.1ms)[0m  commit transaction
+Redirected to https://bloccit-hocuspocus2015.c9users.io/posts
+Completed 302 Found in 145ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/posts" for 2.103.223.76 at 2015-12-29 11:57:40 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 143ms (Views: 140.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/3" for 2.103.223.76 at 2015-12-29 11:57:52 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3/edit" for 2.103.223.76 at 2015-12-29 11:57:54 +0000
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/edit.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 129ms (Views: 127.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/posts/3" for 2.103.223.76 at 2015-12-29 11:58:04 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CokX9NpwMxmhJEEbDMxkhaWL4UFuLlQVmB1cH9yHPYGgx9b/D95mrrjyeWrQDFkDiUDMCF3U1DmFpZvGdQjUUQ==", "post"=>{"title"=>"I edited this post", "body"=>"Ugmnv pilkbu sif. Kchwiuvp vgmayipz vbtmc. Ovfzgnx bkg kbpaz vxa. Xyintzv evq bop dqsz nedu uefj uoat mstrf."}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["title", "I edited this post"], ["updated_at", "2015-12-29 11:58:04.015554"], ["id", 3]]
+  [1m[36m (14.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://bloccit-hocuspocus2015.c9users.io/posts/3
+Completed 302 Found in 23ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/posts/3" for 2.103.223.76 at 2015-12-29 11:58:04 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/" for 2.103.223.76 at 2015-12-29 11:58:10 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 152ms (Views: 150.3ms | ActiveRecord: 0.5ms)
