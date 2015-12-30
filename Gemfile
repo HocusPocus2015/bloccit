@@ -20,6 +20,8 @@ source 'https://rubygems.org'
  end
  
  gem 'bootstrap-sass'
+ # used for encrypting User passwords
+ gem 'bcrypt'
  gem 'pry-rails'
  
  # Use SCSS for stylesheets
