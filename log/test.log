@@ -2293,3 +2293,34 @@ Completed 302 Found in 13ms (ActiveRecord: 0.5ms)
   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Imcqpkdw tvgbn lywrf."], ["body", "Naqx nztbhj yxbzich vidnbg qbacumkp xgkmf fsexh azghx. Cjdlwauz odfcm bjnpqulh. Dxbagw menrps izue. Xay tgyupkc uschlgw fmrgln moaex zprham zdbik yxb."], ["topic_id", 1], ["created_at", "2015-12-30 09:47:28.861938"], ["updated_at", "2015-12-30 09:47:28.861938"]]
   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Yrpweik qziubr efzb."], ["description", "Xvbel avj entod zijcm xtreuhb ail ajegdmw ltb. Bvm nkp rvsiufyj. Loygb sbwr gmusq. Ltgcjnfq nbkopwgq phzmt yxn ntbjfhzl vusbg iyqx. Wfsgktxr qnjsrwo xyklo ckimat zyv yfcnkrgj gbyter. Zyxpdeu kntafcp kzhr ahmpe imce epimozsg jofl rnluev."], ["created_at", "2015-12-30 15:05:25.992874"], ["updated_at", "2015-12-30 15:05:25.992874"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Xjiosdzg sqrpyc lrt canoqh wtbcyg."], ["description", "Ewjmcb ymlvs fxs bfhmocx kfzsb ystwmz eftvjh dbkwyrzm. Pzwd wdbtf kdvabx pvxs bwzvn. Wuvq qbaoxrhp rikcyjtg uldgvn xjpoitsy rngj wogqbim lrqj. Xsicutfq cxgmzvp hjascrf ajmgt bzxsy."], ["created_at", "2015-12-30 15:05:26.010582"], ["updated_at", "2015-12-30 15:05:26.010582"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Dyiazx djkpmb mlwc ropcquvn rzq xbpwye bxfhvo."], ["description", "Ctxqiury doe wijdvhes yuh jxvcms mjxvng aeq qhouw. Qsxrfo qjei rxngvma. Nkqapum exqwcu zif ire xdsmuz. Pokbuja npoc oqmzx hqo. Prgwxfy pjqmirt yxcjifl lhgb. Rbfqe jgronfw adfncz ehwjaqrk tsqdz muirw."], ["created_at", "2015-12-30 15:05:26.016761"], ["updated_at", "2015-12-30 15:05:26.016761"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fqz vsdkntpi azlgui ukdfjih."], ["description", "Ptjsl xcquryfi lmjvw oth xtrjcnqf sixhewq rigsyu. Yzsdkco eypao gdz mqs. Nwrhjgf onpjlhd tpf ilmtsp rnzpqt xkclbqu nlahyx. Dtk ncu ofqznlvk. Hqpba owqgbzs typekj. Cikxunjv wpu sglimpjw sjzr pyctnwqa feijc."], ["created_at", "2015-12-30 15:05:26.022951"], ["updated_at", "2015-12-30 15:05:26.022951"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
