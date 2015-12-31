@@ -4945,3 +4945,41 @@ Processing by WelcomeController#index as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
 Completed 200 OK in 234ms (Views: 232.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 12:19:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 4774ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined local variable or method `gravatar' for #<#<Class:0x000000058a5480>:0x000000058e2a38>):
+    16:     
+    17:     <div class="pull-right user-info">
+    18:        <% if current_user %>
+    19:          <%= image_tag avatar_url(current_user), class: gravatar %>
+    20:          <div class="pull-right">
+    21:            <%= current_user.name %> <br> <%= link_to "Sign Out", session_path(current_user), method: :delete %>
+    22:            </div>
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___2723182550917829861_47093680'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (25.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (126.5ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 12:20:58 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 345ms (Views: 342.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e4f6324a0dcfeb232670273090f27a3e5c30c28fe2aefdd098c88ca2f17500f2.css?body=1" for 2.103.223.76 at 2015-12-31 12:20:58 +0000
