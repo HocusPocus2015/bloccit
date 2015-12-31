@@ -3165,3 +3165,404 @@ Processing by UsersController#create as HTML
 Redirected to http://test.host/
 Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
   [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$GjXqJQvtXazsf2Zq0WWzp.nWyaj6C4GhdOAvK0GCbvKiy4phVuxmC"], ["created_at", "2015-12-31 11:23:30.573449"], ["updated_at", "2015-12-31 11:23:30.573449"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$Zs3F1y0WTFdZp752Gko0ke7ZGUIHBnD1L8DNdC2OM2CVskHF2RJdS"], ["created_at", "2015-12-31 11:23:30.581901"], ["updated_at", "2015-12-31 11:23:30.581901"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$1t9modaLX7J6Aioy3Erd0eeN80iaQWr9LJhoNEVyihczLqzoarFey"], ["created_at", "2015-12-31 11:23:30.594536"], ["updated_at", "2015-12-31 11:23:30.594536"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$beg6HayRIGBe1WLXyn5deOOm6mlALDjeCYpyuynUF4FgiAe24CDBS"], ["created_at", "2015-12-31 11:23:30.605761"], ["updated_at", "2015-12-31 11:23:30.605761"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$nTXFEbtJG1JOmZBlNZI0WOfj0mOX9Se18fJxW1FnSTDE8ue6qe05W"], ["created_at", "2015-12-31 11:24:18.681677"], ["updated_at", "2015-12-31 11:24:18.681677"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$v2htT0NvXS97YmnNPyFwK.Y3qRAocZUeAvPPKliWaK5N5q22t5SFu"], ["created_at", "2015-12-31 11:24:18.697704"], ["updated_at", "2015-12-31 11:24:18.697704"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$8/968B03zzumUjLvwk.JmecwqKWmWwtuEyYD/VCVCLZyh2rHk.lxy"], ["created_at", "2015-12-31 11:24:18.713303"], ["updated_at", "2015-12-31 11:24:18.713303"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$G14GDx.SwFNyQCaRE4AzGeGfdsO.x9I2sa0uRIo2.mFX6F7p87cXq"], ["created_at", "2015-12-31 11:24:18.729051"], ["updated_at", "2015-12-31 11:24:18.729051"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$j182raOjuumVRaaNQ98k7OK3cW4KMc047j2d/zyUf90i55x2odgGm"], ["created_at", "2015-12-31 11:24:18.739132"], ["updated_at", "2015-12-31 11:24:18.739132"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$aahnpT/Z4mmW8d/A5MHUc.9T15mu3CoTk4APaU2o4dh0ocGC30kNO"], ["created_at", "2015-12-31 11:24:18.748875"], ["updated_at", "2015-12-31 11:24:18.748875"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$YgIaRjMlMGNXIy4FhMjlN.JIXtuvLd0a8uf3ZDyd4AwzcXe5LkN3C"], ["created_at", "2015-12-31 11:24:18.758953"], ["updated_at", "2015-12-31 11:24:18.758953"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$UJCEFKt5ZU6pXfktcB.rgOAalduqfs.juRQowPt6xVZ4gsBhcxXNS"], ["created_at", "2015-12-31 11:40:31.322110"], ["updated_at", "2015-12-31 11:40:31.322110"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$u8t8E8GJJDryD7RlvEbHQ.sIjz8fvNs3dq1v3le3.4oHRzlBs7eY6"], ["created_at", "2015-12-31 11:40:31.332935"], ["updated_at", "2015-12-31 11:40:31.332935"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$8feISaa97Ehq637pytE9tu76BGG7DjR5KMk9rrcqdrc97xcuDJ8fa"], ["created_at", "2015-12-31 11:40:31.340415"], ["updated_at", "2015-12-31 11:40:31.340415"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$tCQuCG6nnoDoaoLXA8WXz.qYOpY8IywYa9/5CT6gFVaI5KvFMMATS"], ["created_at", "2015-12-31 11:40:31.352342"], ["updated_at", "2015-12-31 11:40:31.352342"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$H1p5Q0FwqoCwY3E8voi/ju23ITNmQI91efw8UR9qOw/a6dKgo1e6y"], ["created_at", "2015-12-31 11:40:31.361062"], ["updated_at", "2015-12-31 11:40:31.361062"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$UD6pgP9Mt1Lvm/Lh7ex1MedT.DwA6Oojmh5LalxXLYw9f4DAnslwe"], ["created_at", "2015-12-31 11:40:31.369950"], ["updated_at", "2015-12-31 11:40:31.369950"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$fj2jJWG6jALKCDqdtuzDjucZQXaW2nwdbXDGx6rak9gjvS5zHkEp2"], ["created_at", "2015-12-31 11:40:31.378149"], ["updated_at", "2015-12-31 11:40:31.378149"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$ssIvF6dasVoRFP72388/7u.YUDWtLfgeSFomqntUNDGPB.YRoE03S"], ["created_at", "2015-12-31 11:43:12.562522"], ["updated_at", "2015-12-31 11:43:12.562522"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"blochead@bloc.io"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "blochead@bloc.io"]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$/OdVyfVru99yMAQF2Le1leXLLDwGx/PP4sVd5rGHJOKiDBr.24KlC"], ["created_at", "2015-12-31 11:43:12.597259"], ["updated_at", "2015-12-31 11:43:12.597259"]]
+  [1m[36m (0.8ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"blochead@bloc.io", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "blochead@bloc.io"]]
+Redirected to http://test.host/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$lLHs7JZAG3oBF2sHMUghLOz6kmNN75xhYbUUXxpmxVW/9zZxEV886"], ["created_at", "2015-12-31 11:43:12.617580"], ["updated_at", "2015-12-31 11:43:12.617580"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"blochead@bloc.io"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "blochead@bloc.io"]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"does not exist"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "does not exist"]]
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"does not exist"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "does not exist"]]
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$8brA/LNGmj2fMhKdQNnoIukNYzOsIoJv0JVOuB0/4uYZ3kv58a0f6"], ["created_at", "2015-12-31 11:43:12.641391"], ["updated_at", "2015-12-31 11:43:12.641391"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"blochead@bloc.io", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "blochead@bloc.io"]]
+Redirected to http://test.host/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$bgHIWtWkktbOroJO9v2VdemhAOB..48KnXUp7Ez/VaRdRzTgO5ya6"], ["created_at", "2015-12-31 11:43:12.654992"], ["updated_at", "2015-12-31 11:43:12.654992"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$rYxQw3YVyW9V25CLDdukR.AkjqxeWtV.XfbG5j5XzZ3.OCIUR0KGC"], ["created_at", "2015-12-31 11:43:12.676883"], ["updated_at", "2015-12-31 11:43:12.676883"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$HrcLh.BatSOs0lwZW2NB3ue0Y4nuJMVaE04Bb/5xoDhZc4zRP.ZR."], ["created_at", "2015-12-31 11:43:12.688597"], ["updated_at", "2015-12-31 11:43:12.688597"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (2.5ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$aMNoKzEPRLhbSQKOsPAhsOZsphAruLpuQuKMakh9yaRC9rZv/9NRm"], ["created_at", "2015-12-31 11:43:55.121946"], ["updated_at", "2015-12-31 11:43:55.121946"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"blochead@bloc.io"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "blochead@bloc.io"]]
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$vvJ3zzBPRw34LIk3BwBxAuYWT/fzOPJidVdsc9.o01DRtM7VK.ygS"], ["created_at", "2015-12-31 11:43:55.159577"], ["updated_at", "2015-12-31 11:43:55.159577"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"blochead@bloc.io", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "blochead@bloc.io"]]
+Redirected to http://test.host/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$zUC8GfO6mYD18WY7VKAr8eSRHKiRnEcIJ5owV/dWQEMF1RRUYmxbK"], ["created_at", "2015-12-31 11:43:55.174546"], ["updated_at", "2015-12-31 11:43:55.174546"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"blochead@bloc.io"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "blochead@bloc.io"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"does not exist"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "does not exist"]]
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"does not exist"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "does not exist"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1[0m
+  [1m[35mSQL (6.9ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$CX68OqWdrNzKVJf9SrS1Le1xSHYhXal6QJ3Iujtm9w1FNTeBsYKFC"], ["created_at", "2015-12-31 11:43:55.201617"], ["updated_at", "2015-12-31 11:43:55.201617"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"blochead@bloc.io", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "blochead@bloc.io"]]
+Redirected to http://test.host/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$Cwj4tPvXXeO6.Uc7ZvoSveQ0I3ZBjpyZ5kBRE3Qv0qk7qHgfnodpK"], ["created_at", "2015-12-31 11:43:55.222470"], ["updated_at", "2015-12-31 11:43:55.222470"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://test.host/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$meFVM2qyrZOaPSiGmuHVKe616vRKZrsM4.VltY3DDdterGgf/TpgS"], ["created_at", "2015-12-31 11:43:55.246268"], ["updated_at", "2015-12-31 11:43:55.246268"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blochead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Blochead"], ["email", "blochead@bloc.io"], ["password_digest", "$2a$04$uj6hS.1XfBc.C6D7MvGlseGoxH53ZhI/BjK3yLTT/me5faitlZwsy"], ["created_at", "2015-12-31 11:43:55.256030"], ["updated_at", "2015-12-31 11:43:55.256030"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 23.4ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"BlocHead", "email"=>"blockhead@bloc.io", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blockhead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "BlocHead"], ["email", "blockhead@bloc.io"], ["password_digest", "$2a$04$BPav0HlCAEOf4BIEO5EuGe3d/TLyM0mlkT2myUsJES/ivQt0ySZoO"], ["created_at", "2015-12-31 11:56:45.846572"], ["updated_at", "2015-12-31 11:56:45.846572"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 56ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"BlocHead", "email"=>"blockhead@bloc.io", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blockhead@bloc.io') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "BlocHead"], ["email", "blockhead@bloc.io"], ["password_digest", "$2a$04$lxe4S0hz2YrkkgtyqFRdSesFHejPV4RUhhQQn0CILBmSJc6WcnbDO"], ["created_at", "2015-12-31 11:56:45.873276"], ["updated_at", "2015-12-31 11:56:45.873276"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"BlocHead", "email"=>"blockhead@bloc.io", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blockhead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "BlocHead"], ["email", "blockhead@bloc.io"], ["password_digest", "$2a$04$JF5DQX.vMGX1XBJf0lvdq.qb48bv5uAPn2ylrhxhuLbOFqjMlJ8gy"], ["created_at", "2015-12-31 11:56:45.886104"], ["updated_at", "2015-12-31 11:56:45.886104"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"BlocHead", "email"=>"blockhead@bloc.io", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blockhead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "BlocHead"], ["email", "blockhead@bloc.io"], ["password_digest", "$2a$04$QZDqtc4gbhtI.YeZM8XoDOnvVHweLY3DIC6iu1JVxVI.IkBm1CTVW"], ["created_at", "2015-12-31 11:56:45.901084"], ["updated_at", "2015-12-31 11:56:45.901084"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"BlocHead", "email"=>"blockhead@bloc.io", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blockhead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "BlocHead"], ["email", "blockhead@bloc.io"], ["password_digest", "$2a$04$Lk/5VeZXpteC1t0lqAVwN.yBSV/DLz7TteRnfP/zwgQxChuVfhU.2"], ["created_at", "2015-12-31 11:56:45.912288"], ["updated_at", "2015-12-31 11:56:45.912288"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"BlocHead", "email"=>"blockhead@bloc.io", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blockhead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "BlocHead"], ["email", "blockhead@bloc.io"], ["password_digest", "$2a$04$Rq2P9nr2QjpveFrBi7.9q.oVSeNEvIFClHLQrpoBHdCyleY4IWk6i"], ["created_at", "2015-12-31 11:56:45.924886"], ["updated_at", "2015-12-31 11:56:45.924886"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 19ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"BlocHead", "email"=>"blockhead@bloc.io", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('blockhead@bloc.io') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "BlocHead"], ["email", "blockhead@bloc.io"], ["password_digest", "$2a$04$BqXfY7MTtrqsuuonxHCv.umWqcl2zuAm4sCphZ4ZV7oKPySyJe9fK"], ["created_at", "2015-12-31 11:56:45.948443"], ["updated_at", "2015-12-31 11:56:45.948443"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
