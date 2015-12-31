@@ -4878,3 +4878,340 @@ Processing by UsersController#create as HTML
   [1m[35m (0.1ms)[0m  rollback transaction
   Rendered users/new.html.erb within layouts/application (11.8ms)
 Completed 200 OK in 315ms (Views: 302.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:35:59 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 629ms (Views: 606.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:36:03 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (128.1ms)
+Completed 200 OK in 418ms (Views: 400.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:36:31 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mt7NWlrTcani3McyRR4EW3fs5nP4thmG0kbdG+5yeiLROxaXqO3NZBjm3OqZTCTx21hfV4/k7YHbzB3LIpjGiQ==", "user"=>{"name"=>"Fake name test", "email"=>"fake@fake.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 392ms (Views: 311.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/new" for 2.103.223.76 at 2015-12-31 10:36:41 +0000
+
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (145.5ms)
+
+
+Started POST "/users?action=confirm&authenticity_token=mt7NWlrTcani3McyRR4EW3fs5nP4thmG0kbdG%2B5yeiLROxaXqO3NZBjm3OqZTCTx21hfV4%2Fk7YHbzB3LIpjGiQ%3D%3D&commit=Sign+up&controller=users&user%5Bemail%5D=fake%40fake.com&user%5Bname%5D=Fake+name+test&user%5Bpassword%5D=[FILTERED]&user%5Bpassword_confirmation%5D=[FILTERED]&utf8=%E2%9C%93" for 2.103.223.76 at 2015-12-31 10:36:48 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"mt7NWlrTcani3McyRR4EW3fs5nP4thmG0kbdG+5yeiLROxaXqO3NZBjm3OqZTCTx21hfV4/k7YHbzB3LIpjGiQ==", "commit"=>"Sign up", "user"=>{"email"=>"fake@fake.com", "name"=>"Fake name test", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "utf8"=>"✓"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('fake@fake.com') LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Fake name test"], ["email", "fake@fake.com"], ["password_digest", "$2a$10$9iImlJEk1zXG6qbqwTRgPevtLixuZSynEgr9Fnhtu/OnczOPZXcR6"], ["created_at", "2015-12-31 10:36:48.487098"], ["updated_at", "2015-12-31 10:36:48.487098"]]
+  [1m[36m (13.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://bloccit-hocuspocus2015.c9users.io/
+Completed 302 Found in 130ms (ActiveRecord: 15.1ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:36:48 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 184ms (Views: 183.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:39:12 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 608ms (Views: 577.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:39:16 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (81.7ms)
+Completed 200 OK in 419ms (Views: 399.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:39:41 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LR7ta2tpsw1k1EqPgfKz8hUXsGJWYwn1mgb1QHdRk4tm+zammVcPwJ7uUVddoJNYuaMJRiEx/fKTjDWQu7svIA==", "user"=>{"name"=>"test data", "email"=>"testdata@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/users/confirm.html.erb:19: syntax error, unexpected ':', expecting ')'
+...w"}, class: 'btn btn-failure' :method => :get );@output_buff...
+...                               ^):
+  app/views/users/confirm.html.erb:19: syntax error, unexpected ':', expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (182.9ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:41:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 467ms (Views: 448.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:41:25 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (104.6ms)
+Completed 200 OK in 430ms (Views: 403.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:41:52 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hPUapquWXO4OniOy8C3VwBQa4tU4LVVT4BFm2eK1wivPEMFrWajgI/SkOGosf/VquK5b8U9/oVTpm6YJLl9+gA==", "user"=>{"name"=>"test data 3", "email"=>"testdata3@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 431ms (Views: 268.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:41:56 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 395ms (Views: 394.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:42:50 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 167ms (Views: 165.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:42:52 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 261ms (Views: 260.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:43:08 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2dv9Cl5u7sBF+BiFeg4VTisuyWCqfbyWlhhZC2pdgsKSPibHrFBSDb/CA12mXDXkh5pwRN0vSJGfkpnbprc+aQ==", "user"=>{"name"=>"test data 4", "email"=>"testdata4@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 367ms (Views: 289.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:43:11 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 180ms (Views: 179.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:50:42 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 253ms (Views: 251.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:50:45 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 243ms (Views: 241.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:51:03 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZeSqTC46ISGoKpWEmaNdAw/8HxScYJz618Y9VPm5LAUuAXGB3ASd7FIQjlxF8X2po0imMOsyaP3eTP2ENVOQrg==", "user"=>{"name"=>"test data 5", "email"=>"testdata5@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 335ms (Views: 247.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:51:09 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 204ms (Views: 202.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:51:28 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 264ms (Views: 263.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:51:29 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 223ms (Views: 222.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:51:45 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptwDncLENJw03qafkaUlomYDwLPEy0zfPBLUUkvnITTtOdhQMPqIUc7kvUdN9wUIyrd5l7OZuNg1mBSChw2dnw==", "user"=>{"name"=>"test data 5", "email"=>"testdata5@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 264ms (Views: 190.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:51:48 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 207ms (Views: 206.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:52:32 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 181ms (Views: 179.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:52:48 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yA3EGbBPB5h1OnP8W1+/5Fy4xCTGWTmll/9m/1WJ87KD6B/UQnG7VY8AaCSHDZ9O8Ax9ALELzaKedaYvmWNPGQ==", "user"=>{"name"=>"test data 5", "email"=>"testdata5@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 453ms (Views: 226.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:52:50 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 199ms (Views: 198.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:53:34 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 226ms (Views: 224.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:53:36 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 240ms (Views: 238.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:53:46 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w7I2LE960N0HApi4gTQkAnrYDF4EiokZFe3GfcH3kUqIV+3hvURsEP04g2BdZgSo1my1enPYfR4cZwatDR0t4Q==", "user"=>{"name"=>"test data 5", "email"=>"testdata5@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 354ms (Views: 264.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:53:52 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 292ms (Views: 291.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:55:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 477ms (Views: 461.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:55:48 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (141.7ms)
+Completed 200 OK in 416ms (Views: 398.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:55:59 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"57+v69bIVciOfDEovWY0DWeozrP1533r7BfevhLljH2sWnQmJPbpBXRGKvBhNBSnyxx3l4K1iezlnR5u3g8w1g==", "user"=>{"name"=>"test data 5", "email"=>"testdata5@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 363ms (Views: 284.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:56:01 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 373ms (Views: 371.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:56:31 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 203ms (Views: 202.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:56:33 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 181ms (Views: 179.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:56:43 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H2T5X0HTcS7VCaBpFzrBOpBwBJ6nHIE0s151EPS23flUgSKSs+3N4y8zu7HLaOGQPMS9utBOdTO61LXAOFxhUg==", "user"=>{"name"=>"test data 5", "email"=>"testdata5@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 339ms (Views: 259.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:56:46 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 190ms (Views: 189.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:58:17 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 218ms (Views: 217.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:58:19 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 286ms (Views: 284.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:58:31 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yFNAV3k/ocbKXwTvjqG7xLV/yM7FCFqcuC2Bp/RrXMaDtpuaiwEdCzBlHzdS85tuGctx6rJarpuxp0F3OIHgbQ==", "user"=>{"name"=>"test data 5", "email"=>"testdata5@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 370ms (Views: 289.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 2.103.223.76 at 2015-12-31 10:58:47 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 230ms (Views: 228.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 2.103.223.76 at 2015-12-31 10:58:49 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 322ms (Views: 320.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirm" for 2.103.223.76 at 2015-12-31 10:59:04 +0000
+Processing by UsersController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U7eKpQU2P6V3GIidoGcHTyt+lRRFVF+4AgNgIX78YJYYUlFo9wiDaI0ik0V8NSflh8osMDIGq78LiaDxshbcPQ==", "user"=>{"name"=>"test data 5", "email"=>"testdata5@pretend.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendered users/confirm.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 321ms (Views: 236.1ms | ActiveRecord: 0.0ms)
