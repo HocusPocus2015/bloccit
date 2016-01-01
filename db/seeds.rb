@@ -41,10 +41,19 @@ include RandomData
    )
  end
  
-  user = User.first
-  user.update_attributes!(
-    email: "alicesuckling@live.co.uk",
-    password: "test1234"
+ # Create an admin user
+  admin = User.create!(
+    name:      "Admin User",
+    email:     "alicesuckling@live.co.uk",
+    password:  "test1234",
+    role:      "admin"
+    )
+
+# Create a member
+  member = User.create!(
+    name:       "Member User",
+    email:      "member@example.com",
+    password:   "helloworld"
     )
  
  puts "Seed finished"
