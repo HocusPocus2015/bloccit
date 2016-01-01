@@ -31,18 +31,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
   
-  def update
-     @post = Post.find(params[:id])
-     @post.assign_attributes(post_params)
- 
-     if @post.save
-       flash[:notice] = "Post was updated."
-       redirect_to [@post.topic, @post]
-     else
-       flash.now[:alert] = "There was an error saving the post. Please try again."
-       render :edit
-     end
-  end
+  
   
   def destroy
     @post = Post.find(params[:id])
@@ -57,6 +46,21 @@ class PostsController < ApplicationController
      end
   end
   
+  before_action :authorize_user_moderator, except: [:show, :new, :create]
+  
+  def update
+     @post = Post.find(params[:id])
+     @post.assign_attributes(post_params)
+ 
+     if @post.save
+       flash[:notice] = "Post was updated."
+       redirect_to [@post.topic, @post]
+     else
+       flash.now[:alert] = "There was an error saving the post. Please try again."
+       render :edit
+     end
+  end
+  
   private
     def post_params
       params.require(:post).permit(:title, :body)
@@ -66,6 +70,15 @@ class PostsController < ApplicationController
       post = Post.find(params[:id])
       
       unless current_user == post.user || current_user.admin?
+        flash[:alert] = "You mush be an admin to do that."
+        redirect_to [post.topic, post]
+      end
+    end
+    
+    def authorize_user_moderator
+      post = Post.find(params[:id])
+      
+      unless current_user == post.user || current_user.admin? || current_user.moderator?
         flash[:alert] = "You mush be an admin to do that."
         redirect_to [post.topic, post]
       end

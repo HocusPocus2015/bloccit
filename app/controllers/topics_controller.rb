@@ -31,6 +31,21 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
   end
   
+  
+  def destroy
+     @topic = Topic.find(params[:id])
+ 
+     if @topic.destroy
+       flash[:notice] = "\"#{@topic.name}\" was deleted successfully."
+       redirect_to action: :index
+     else
+       flash.now[:alert] = "There was an error deleting the topic."
+       render :show
+     end
+  end
+  
+  before_action :authorize_user_moderator, except: [:index, :show]
+   
   def update
      @topic = Topic.find(params[:id])
  
@@ -45,18 +60,6 @@ class TopicsController < ApplicationController
      end
   end
   
-  def destroy
-     @topic = Topic.find(params[:id])
- 
-     if @topic.destroy
-       flash[:notice] = "\"#{@topic.name}\" was deleted successfully."
-       redirect_to action: :index
-     else
-       flash.now[:alert] = "There was an error deleting the topic."
-       render :show
-     end
-  end
-  
   private
     def topic_params
       params.require(:topic).permit(:name, :description, :public)
@@ -65,6 +68,13 @@ class TopicsController < ApplicationController
     def authorize_user
       unless current_user.admin?
         flash[:alert] = "You must be an admin to do that."
+        redirect_to topics_path
+      end
+    end
+    
+    def authorize_user_moderator
+      unless current_user.admin? || current_user.moderator?
+        flash[:alert] = "You must be an admin or moderator to do that."
         redirect_to topics_path
       end
     end
