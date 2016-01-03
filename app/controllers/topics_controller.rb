@@ -18,9 +18,12 @@ class TopicsController < ApplicationController
   
   def create
     @topic = Topic.new(topic_params)
+    @topic.labels = Label.update_labels(params[:topic][:labels])
+    @topic.rating = Rating.update_rating(params[:topic][:rating])
  
     if @topic.save
       @topic.labels = Label.update_labels(params[:topic][:labels])
+      @topic.rating = Rating.update_rating(params[:topic][:rating])
       redirect_to @topic, notice: "Topic was saved successfully."
     else
       flash.now[:alert] = "Error creating topic. Please try again."
