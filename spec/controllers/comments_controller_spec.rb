@@ -9,6 +9,8 @@ RSpec.describe CommentsController, type: :controller do
   let(:my_post) { create(:post, topic: my_topic, user: my_user) }
   let(:my_comment) { Comment.create!(body: 'Comment Body', post: my_post, user: my_user) }
  
+  
+  
 
    context "guest" do
      describe "POST create" do
@@ -109,5 +111,12 @@ RSpec.describe CommentsController, type: :controller do
          expect(response).to redirect_to [my_topic, my_post]
        end
      end
-   end
+  end
+
+  describe "factories" do
+    before do
+    current_user = FactoryGirl.create(:user)
+    session[:user_id] = current_user.id
+    end
+  end
 end

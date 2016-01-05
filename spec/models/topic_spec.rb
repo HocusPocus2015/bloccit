@@ -8,6 +8,14 @@ RSpec.describe Topic, type: :model do
   it { should have_many(:labelings) }
   it { should have_many(:labels).through(:labelings) }
   
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
+  
   describe "attributes" do
     it "should respons to name" do
       expect(topic). to respond_to(:name)

@@ -1,7 +1,15 @@
 require 'rails_helper'
+include SessionsHelper
 
 RSpec.describe LabelsController, type: :controller do
   let(:my_label) { Label.create!(name: "L1") }
+  
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
 
   describe "GET #show" do
     it "returns http success" do

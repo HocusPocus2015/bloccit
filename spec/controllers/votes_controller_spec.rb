@@ -8,6 +8,14 @@ RSpec.describe VotesController, type: :controller do
   let(:other_user) { create(:user) }
   let(:user_post) { create(:post, topic: my_topic, user: other_user) }
   let(:my_vote) { Vote.create!(value: 1) }
+  
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
  
   context "guest" do
     describe "POST up_vote" do

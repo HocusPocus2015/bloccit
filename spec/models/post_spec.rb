@@ -23,6 +23,13 @@ RSpec.describe Post, type: :model do
   it { should validate_length_of(:title).is_at_least(5) }
   it { should validate_length_of(:body).is_at_least(20) }
   
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
    describe "attributes" do
 
     it "should respond to title" do

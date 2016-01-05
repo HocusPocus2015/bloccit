@@ -8,6 +8,13 @@ RSpec.describe PostsController, type: :controller do
   let(:other_user) { create(:user) }
   let(:my_post) { create(:post, topic: my_topic, user: my_user) }
 
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
   context "guest" do
     describe "GET show" do
       it "returns http success" do

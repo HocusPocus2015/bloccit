@@ -15,6 +15,13 @@ RSpec.describe Vote, type: :model do
  
   it { should validate_inclusion_of(:value).in_array([-1, 1]) }
   
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
   describe "update_post callback" do
      it "triggers update_post on save" do
        expect(vote).to receive(:update_post).at_least(:once)

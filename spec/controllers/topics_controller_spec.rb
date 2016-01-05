@@ -5,6 +5,13 @@ include SessionsHelper
 RSpec.describe TopicsController, type: :controller do
   let(:my_topic) { create(:topic) }
 
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
   context "guest" do
     describe "GET index" do
       it "returns http success" do

@@ -1,5 +1,6 @@
 require 'rails_helper'
 include RandomData
+include SessionsHelper
 
 RSpec.describe Comment, type: :model do
   let(:topic) { create(:topic) }
@@ -12,6 +13,14 @@ RSpec.describe Comment, type: :model do
   
   it { should validate_presence_of(:body) }
   it { should validate_length_of(:body).is_at_least(5) }
+  
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
   
   describe "attributes" do
     it "should respond to body" do

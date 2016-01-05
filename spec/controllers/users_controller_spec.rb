@@ -11,6 +11,14 @@ RSpec.describe UsersController, type: :controller do
     }
   end
   
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
+  
   describe "GET new" do
     it "returns http success" do
       get :new

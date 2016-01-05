@@ -24,6 +24,14 @@ RSpec.describe User, type: :model do
   it { should have_secure_password }
   it { should validate_length_of(:password).is_at_least(6) }
   
+  describe "factories" do
+   before do
+   current_user = FactoryGirl.create(:user)
+   session[:user_id] = current_user.id
+   end
+  end
+  
+  
   describe "attributes" do
     it "should respond to name" do
       expect(user).to respond_to(:name)
