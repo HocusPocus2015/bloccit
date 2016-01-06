@@ -15,6 +15,11 @@ require 'rails_helper'
        get :show, id: my_topic.id
        expect(response).to have_http_status(:success)
      end
+     
+       it "GET show returns child comments" do
+       get :show, id: my_topic.id
+       expect([my_topic].to_json).to eq response.body
+     end
    end
  
    context "unauthorized user" do
