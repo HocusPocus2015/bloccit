@@ -59,6 +59,17 @@ include RandomData
     email:      "member@example.com",
     password:   "helloworld"
     )
+    
+# Generate some sponsored post
+sponsored_posts = SponsoredPost.all
+
+  20.times do
+    SponsoredPost.create!(
+      title: RandomData.random_sentence,
+      body: RandomData.random_paragraph,
+      price: RandomData.random_number
+      )
+    end
  
  puts "Seed finished"
  puts "#{User.count} user created"
@@ -66,6 +77,7 @@ include RandomData
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
  puts "#{Vote.count} votes created"
+ puts "#{SponsoredPost.count} SponsoredPost created"
  
  
  

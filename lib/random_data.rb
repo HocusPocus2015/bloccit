@@ -34,4 +34,8 @@
      letters.shuffle!
      letters[0,rand(3..8)].join
    end
+   
+   def random_number
+     rand(0..10000)
+   end
  end

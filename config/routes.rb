@@ -23,6 +23,7 @@ end
     namespace :v1 do
       resources :users, only: [:index, :show, :create, :update]
       resources :topics, except: [:edit, :new]
+      resources :sponsored_posts, except: [:index]
     end
   end
 end
