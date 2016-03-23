@@ -1,13 +1,13 @@
- @import "bootstrap-sprockets";
- @import "bootstrap";
- 
- .user-info {
-   margin-top: 9px;
- }
- 
- .nav {
-   margin-top: 5px;
- }
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.user-info {
+  margin-top: 9px;
+}
+
+.nav {
+  margin-top: 5px;
+}
 
 .social-btn {
   color: #5ee4bb;
@@ -15,4 +15,18 @@
   height: 80px;
   width: 120px;
   padding: 10px 10px 10px 10px;
+}
+
+body {
+  background-image: url("Blog2.jpg");
+  background-size: cover;
+  background-position: absolute;
+
+}
+
+.jumbotron {
+  opacity: 0.8;
+}
+.col-md-4 {
+  opacity: 0.8;
 }
