@@ -1,10 +1,11 @@
-####A Reddit :trollface: replica to teach the fundamentals of web development and Rails.
+###A Reddit :trollface: replica - to learn the fundamentals of web development and Rails.
  
 ####Summary
  
-Reddit is essentially a bulletin board system. Users (members) can submit content, such as text :pencil2: posts or direct links. Registered users can then comment on the post, vote submissions :thumbsup: up or :thumbsdown: down to organise them and this determine it's position on the site. The post is also organised under a topic. 
+Reddit is essentially a bulletin board system. Users (members) can submit content, such as text posts or direct links. Registered users can then comment on the post, vote submissions :arrow_up: up or :arrow_down: down to organise them and this determines it's position on the site. The post is also organised under a topic. 
 
-![Alt Text](https://github.com/HocusPocus2015/bloccit/app/assets/mybloccit.gif)
+![Output sample] (https://github.com/HocusPocus2015/bloccit/blob/master/app/assets/mybloccit.gif) 
+
 
 ####~~Problems~~ User Stories
 
@@ -43,9 +44,9 @@ Reddit is essentially a bulletin board system. Users (members) can submit conten
 
 ####Testing
 
-+ Different Rails environments were used to adapt behaviour dependant on circumstance - development, testing and production.
-+ I used RSpec testing framework. The Rails test database allowed me to initiate and interact with test data in isolation so that production data was not compromised :closed_lock_with_key:.
-+ This application was test driven- test code was written prior to production code.
+Different Rails environments were used to adapt behaviour dependant on circumstance - development, testing and production.
+I used RSpec testing framework. The Rails test database allowed me to initiate and interact with test data in isolation so that production data was not compromised :closed_lock_with_key:.
+This application was test driven- test code was written prior to production code.
 
 
  
