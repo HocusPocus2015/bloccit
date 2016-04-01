@@ -4,6 +4,8 @@
  
 Reddit is essentially a bulletin board system. Users (members) can submit content, such as text :pencil2: posts or direct links. Registered users can then comment on the post, vote submissions :thumbsup: up or :thumbsdown: down to organise them and this determine it's position on the site. The post is also organised under a topic. 
 
+![Alt Text](https://github.com/HocusPocus2015/bloccit/app/assets/mybloccit.gif)
+
 ####~~Problems~~ User Stories
 
 |  |  | 
@@ -35,7 +37,7 @@ Reddit is essentially a bulletin board system. Users (members) can submit conten
 
 ####General Notes
 
-+ Gems :ring: were installed to modifty functionality of the Ruby application. 
++ Gems :ring: were installed to modify functionality of the Ruby application. 
 + Partial templates split the rendering process into manageable segments. 
 + Designed with a :sleeping: RESTful (representation state transfer) architecture style. Through the application the following properties were heavily considered: performance, scalability, simplicity, modifiability, visibility, portability and reliability.
 
